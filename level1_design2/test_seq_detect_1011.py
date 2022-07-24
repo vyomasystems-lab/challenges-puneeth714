@@ -37,10 +37,10 @@ async def test_seq_bug1(dut):
     await FallingEdge(dut.clk)
 
     cocotb.log.info(
-        f"Actually it shhould be 1 but showing {dut.seq_seen.value}")
+        f"Actually it should be 1 but showing {dut.seq_seen.value}")
     cocotb.log.info('#### CTB: Develop your test here! ######')
 
-    assert dut.seq_seen.value == 1
+    assert dut.seq_seen.value == 1, f"Actual seq=1 Result ={dut.seq_seen.value}"
 
 
 @cocotb.test()
@@ -65,7 +65,7 @@ async def test_seq_bug1_1(dut):
     await FallingEdge(dut.clk)
 
     cocotb.log.info(
-        f"Actually it shhould be 1 but showing {dut.seq_seen.value}")
+        f"Actually it should be 1 but showing {dut.seq_seen.value}")
     cocotb.log.info('#### CTB: Develop your test here! ######')
 
-    assert dut.seq_seen.value == 1
+    assert dut.seq_seen.value == 1, f"Actual seq=1 Result ={dut.seq_seen.value}"
