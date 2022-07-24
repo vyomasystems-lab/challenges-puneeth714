@@ -1,0 +1,64 @@
+$date
+	Thu Jul 21 15:03:16 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module seq_detect_1011_tb $end
+$var wire 1 ! seq_seen $end
+$var reg 1 " clk $end
+$var reg 1 # inp_bit $end
+$var reg 1 $ reset $end
+$scope module s $end
+$var wire 1 " clk $end
+$var wire 1 # inp_bit $end
+$var wire 1 $ reset $end
+$var wire 1 ! seq_seen $end
+$var reg 3 % current_state [2:0] $end
+$var reg 3 & next_state [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx &
+bx %
+1$
+0#
+0"
+x!
+$end
+#10
+0!
+b0 %
+1"
+#20
+0"
+0$
+#30
+b1 %
+b1 &
+1"
+1#
+#40
+b10 &
+0"
+0#
+#50
+b0 %
+b0 &
+1"
+1#
+#60
+0"
+#70
+1"
+#80
+0"
+#90
+1"
+#100
+0"
