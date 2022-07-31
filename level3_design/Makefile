@@ -4,10 +4,10 @@ TOPLEVEL_LANG ?= verilog
 
 PWD=$(shell pwd)
 
-VERILOG_SOURCES = $(PWD)/               # provide your design path
+VERILOG_SOURCES = $(PWD)/ parity_calc_fix.v              # provide your design path
 
-TOPLEVEL :=           # design file
-MODULE   :=     # test file
+TOPLEVEL := parity_calc          # design file
+MODULE   :=  parity_calc_test   # test file
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 
